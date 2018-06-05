@@ -5,7 +5,7 @@ user  {{ .Config.User }};
 worker_processes  {{ .Config.WorkerProcesses }};
 worker_rlimit_nofile {{ .Config.RLimitNoFile }};
 
-error_log  /var/log/error.log warn;
+error_log  /var/log/nginx/error.log warn;
 pid        {{ .Config.PidPath }};
 
 
